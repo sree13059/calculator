@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Machine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="atm-container">
+        <h1>ATM Machine</h1>
+        <div class="screen">
+            <p id="message">Welcome to the ATM!</p>
+        </div>
+        <div class="buttons">
+            <button onclick="checkBalance()">Check Balance</button>
+            <button onclick="deposit()">Deposit</button>
+            <button onclick="withdraw()">Withdraw</button>
+        </div>
+    </div>
+
+    <!-- Deposit and Withdraw Form -->
+    <div id="form-container" class="form-container hidden">
+        <input type="number" id="amount" placeholder="Enter amount">
+        <button onclick="submitTransaction()">Submit</button>
+        <button onclick="cancelTransaction()">Cancel</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
